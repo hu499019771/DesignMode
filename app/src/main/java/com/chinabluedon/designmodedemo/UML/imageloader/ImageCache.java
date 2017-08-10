@@ -1,52 +1,25 @@
 package com.chinabluedon.designmodedemo.UML.imageloader;
 
 import android.graphics.Bitmap;
-import android.text.TextUtils;
-import android.util.LruCache;
 
 /**
- * @author 胡腾
- * @time 2017/8/9  21:03
- * @desc 图片缓存管理类
+ * @author ht
+ * @time 2017/8/10  11:05
+ * @desc 图片缓存接口
  */
-public class ImageCache {
-
-    private LruCache<String, Bitmap> mLruCache;
-
-    public ImageCache() {
-
-        int maxMemory = (int) Runtime.getRuntime().maxMemory();
-        int cacheMemory = maxMemory / 4;
-        mLruCache = new LruCache<String, Bitmap>(cacheMemory) {
-            @Override
-            protected int sizeOf(String key, Bitmap value) {
-                return value.getRowBytes() * value.getHeight() / 1024;
-            }
-        };
-    }
+public interface ImageCache {
 
     /**
-     * 通过图片地址提取其bitmap方法
-     *
-     * @param url
-     * @return
+     * 将图片存进缓存
+     * @param url 图片地址
+     * @param bitmap 图片的bitmap对象
      */
-    public Bitmap getCache(String url) {
-        if (!TextUtils.isEmpty(url)) {
-            return mLruCache.get(url);
-        }
-        return null;
-    }
+    void put (String url, Bitmap bitmap);
 
     /**
-     * 将url和bitmap存起来
-     * @param url
-     * @param bitmap
+     * 将图片从缓存取出来
+     * @param url  图片地址
+     * @return 返回图片的bitmap对象
      */
-    public void putCache(String url, Bitmap bitmap) {
-        if (!TextUtils.isEmpty(url) && bitmap != null) {
-            mLruCache.put(url, bitmap);
-        }
-
-    }
+    Bitmap get (String url);
 }
