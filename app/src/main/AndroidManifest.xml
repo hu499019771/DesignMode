@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name=".UML.ImageActivity"
+            android:name=".uml.ImageActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 

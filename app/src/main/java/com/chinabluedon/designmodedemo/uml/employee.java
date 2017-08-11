@@ -1,4 +1,4 @@
-package com.chinabluedon.designmodedemo.UML;
+package com.chinabluedon.designmodedemo.uml;
 
 /**
  * @author 胡腾
