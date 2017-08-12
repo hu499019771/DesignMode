@@ -1,4 +1,4 @@
-package com.chinabluedon.designmodedemo.uml;
+package com.chinabluedon.designmodedemo.first.uml;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.widget.ImageView;
 
 import com.chinabluedon.designmodedemo.R;
-import com.chinabluedon.designmodedemo.uml.imageloader.ImageLoader;
+import com.chinabluedon.designmodedemo.first.uml.imageloader.ImageLoader;
 
 /**
  * @author ht

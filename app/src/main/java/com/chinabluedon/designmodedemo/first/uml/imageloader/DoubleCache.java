@@ -1,4 +1,4 @@
-package com.chinabluedon.designmodedemo.uml.imageloader;
+package com.chinabluedon.designmodedemo.first.uml.imageloader;
 
 import android.graphics.Bitmap;
 

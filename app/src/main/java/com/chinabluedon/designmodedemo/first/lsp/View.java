@@ -1,4 +1,4 @@
-package com.chinabluedon.designmodedemo.lsp;
+package com.chinabluedon.designmodedemo.first.lsp;
 
 /**
  * @author ht

@@ -1,11 +1,11 @@
-package com.chinabluedon.designmodedemo.uml.imageloader;
+package com.chinabluedon.designmodedemo.first.uml.imageloader;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
-import com.chinabluedon.designmodedemo.uml.utils.TaskRunUtils;
+import com.chinabluedon.designmodedemo.first.uml.utils.TaskRunUtils;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
