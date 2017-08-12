@@ -1,4 +1,4 @@
-package com.chinabluedon.designmodedemo.first.uml;
+package com.chinabluedon.designmodedemo.uml;
 
 import android.os.Handler;
 import android.os.Looper;

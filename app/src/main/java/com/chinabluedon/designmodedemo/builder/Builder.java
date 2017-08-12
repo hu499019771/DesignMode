@@ -9,12 +9,14 @@ public abstract class Builder {
 
     /**
      * 设置主机
+     *
      * @param board 主机
      */
     public abstract Builder board (String board);
 
     /**
      * 设置显示器
+     *
      * @param display
      */
     public abstract Builder display (String display);

@@ -1,6 +1,6 @@
-package com.chinabluedon.designmodedemo.first.uml.utils;
+package com.chinabluedon.designmodedemo.utils;
 
-import com.chinabluedon.designmodedemo.first.uml.MainHandler;
+import com.chinabluedon.designmodedemo.uml.MainHandler;
 
 /**
  * @author ht
